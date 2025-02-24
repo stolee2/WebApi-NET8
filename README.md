@@ -37,7 +37,7 @@ YourSolution/
 
 ## **📌 API Endpoints**
 
-### **1️⃣ Company Endpoints**
+### **1️ Company Endpoints**
 | Method | Endpoint              | Description |
 |--------|----------------------|-------------|
 | GET    | `/companies`         | Get all companies (🔒 **Protected**) |
@@ -46,7 +46,7 @@ YourSolution/
 | PUT    | `/companies/{id}`    | Update a company |
 | DELETE | `/companies/{id}`    | Delete a company |
 
-### **2️⃣ Contact Endpoints**
+### **2️ Contact Endpoints**
 | Method | Endpoint                                           | Description                                                 |
 |--------|----------------------------------------------------|-------------------------------------------------------------|
 | GET    | `/contacts`                                        | Get all contacts                                            |
@@ -57,7 +57,7 @@ YourSolution/
 | GET    | `/contacts/{countryId}{companyId}/filter-contacts` | Get all contacts by fitering with company id and country id |
 | GET    | `/contacts/contacts-with-company-and-country`      |  Get all contacts with company and country information      |
 
-### **3️⃣ Country Endpoints**
+### **3️ Country Endpoints**
 | Method | Endpoint                             | Description                          |
 |--------|--------------------------------------|--------------------------------------|
 | GET    | `/countries`                         | Get all countries                    |
@@ -67,13 +67,13 @@ YourSolution/
 | DELETE | `/countries/{id}`                    | Delete a country                     |
 | GET    | `/countries/{id}/company-statistics` | Get company statistics by country ID |
 
-### **4️⃣ Authentication & Security Endpoints**
+### **4️ Authentication & Security Endpoints**
 | Method | Endpoint   | Description |
 |--------|-----------|-------------|
 | POST   | `/login`  | Authenticate user and return JWT Token |
 
 
-## **📌 🔒 Authentication & Authorization**
+## ** 🔒 Authentication & Authorization**
 - **JWT Authentication** is implemented to secure endpoints.
 - The following endpoint is **protected** and requires a valid **JWT Token**:
   ```csharp
@@ -97,15 +97,15 @@ YourSolution/
   1. **Get JWT Token**: Call `/login` with `{ "username": "admin", "password": "password" }`.
   2. **Use Token**: Send `Authorization: Bearer {TOKEN}` in API requests.
 
-## **📌 Running the Project**
-### **1️⃣ Setup & Run Migration**
+## ** Running the Project**
+### **1️ Setup & Run Migration**
 ```bash
 # Run Migrations in Visual Studio package manager console by selecting Infrastruce project from Default Project dropdown.
 Add-Migration InitialCreate
 Update-database
 ```
 
-## **📌 Unit Testing**
+## ** Unit Testing**
 Unit tests are written using **xUnit & Moq** inside the `Tests` project.
 
 
@@ -113,5 +113,5 @@ Unit tests are written using **xUnit & Moq** inside the `Tests` project.
 - **Service Layer Tests** (e.g., `CompanyServiceTests.cs`)
 
 ---
-🚀 **Enjoy building scalable APIs with .NET 8 and Clean Architecture!**
+ **Enjoy building scalable APIs with .NET 8 and Clean Architecture!**
 
